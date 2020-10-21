@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Livraria';
-}
+
+  livros=[];
+  onAdicionarLivro(livro) {
+    this.livros = [...this.livros, livro];
+    console.log(livro);
+    }
+    }
